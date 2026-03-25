@@ -1,84 +1,104 @@
-# SQL Cinema Analytics
+# Análisis de Datos de Cine con SQL
 
-## Project Overview
-
-This project performs relational database analysis using SQL Server on a restored movie rental database (dvdrental).
-
-The objective is to extract business insights from transactional data related to movie rentals, customer activity, actor participation, and store-level sales performance.
-
-The project focuses entirely on structured querying and analytical SQL techniques within a relational schema.
+De Literatura a Ciencia de Datos.  
+Trabajo donde la estrategia, la creatividad y la analítica convergen.
 
 ---
 
-## Database Setup
+## Contexto
 
-The database was restored locally using SQL Server Management Studio (SSMS) from a backup file:
+Este proyecto consiste en el análisis de una base de datos de una empresa de renta de películas utilizando SQL Server.
 
-dvdrental.bak
-
-After restoration, the working environment was initialized using:
-
-USE dvdrental;
-
-All queries were executed against this relational database.
+El objetivo es responder preguntas de negocio mediante consultas SQL, explorando el comportamiento de clientes, películas, actores y ventas.
 
 ---
 
-## Analytical Scope
+## Objetivo
 
-The project explores multiple business-oriented questions, including:
-
-Rental Activity Analysis
-- Identifying movies that were never rented  
-- Determining the most rented movies  
-- Counting how many times each movie was rented  
-- Detecting movies rented more than once  
-
-Customer Behavior
-- Identifying customers who never rented a movie  
-- Counting customers per store  
-- Analyzing rental frequency per customer  
-
-Actor Analysis
-- Listing actors and their film participation  
-- Identifying actors who have appeared in more than 30 films  
-
-Store Performance
-- Calculating total sales per store  
-- Comparing revenue generation between store locations  
+- Consultar y analizar datos relacionales  
+- Obtener insights sobre comportamiento de clientes  
+- Analizar popularidad de películas  
+- Evaluar desempeño de tiendas  
+- Aplicar consultas avanzadas con joins, agregaciones y subconsultas  
 
 ---
 
-## SQL Techniques Applied
+## Dataset
+https://drive.google.com/drive/folders/10Ij9886ZCQXqO-xbF1CJkRleHVsQIEnk?usp=sharing
 
-This project demonstrates practical application of:
+Se utiliza una base de datos tipo **dvdrental**, que contiene información sobre:
 
-- SELECT statements  
-- WHERE filtering  
-- LIKE operator  
-- INNER JOIN  
-- LEFT JOIN  
-- GROUP BY  
-- ORDER BY  
-- COUNT()  
-- SUM()  
-- Subqueries  
-- Common Table Expressions (CTEs)  
+- Películas  
+- Actores  
+- Clientes  
+- Inventario  
+- Rentas  
+- Tiendas  
 
-The queries combine relational joins and aggregation logic to transform transactional data into analytical insights.
+El análisis se realizó en SQL Server, restaurando la base de datos localmente.
 
 ---
 
-## Business Insight Orientation
+## Metodología
 
-Rather than focusing on database administration, the emphasis of this project is analytical querying.
+El proyecto se desarrolla mediante consultas SQL estructuradas para responder preguntas específicas.
 
-Each query is structured to answer a clear business question, simulating real-world data analysis scenarios within a transactional database.
+Se utilizaron:
+
+- SELECT para extracción de datos  
+- JOIN para relaciones entre tablas  
+- GROUP BY y COUNT para agregaciones  
+- ORDER BY para organización de resultados  
+- Subconsultas para análisis más complejos  
 
 ---
 
-## Tools Used
+## Análisis realizados
+
+Entre las consultas más relevantes se encuentran:
+
+- Listado de actores (nombre y apellido)  
+- Búsqueda de actores por patrón (ej. nombres que empiezan con "D")  
+- Conteo de actores con el mismo nombre  
+- Identificación de películas más rentadas  
+- Detección de películas no rentadas  
+- Identificación de clientes sin actividad  
+- Análisis de actores con mayor participación en películas  
+- Cálculo de ventas totales por tienda  
+- Identificación de clientes que rentaron más de una vez  
+
+---
+
+## Hallazgos clave
+
+- Algunas películas concentran una alta frecuencia de rentas, destacando como las más populares  
+- Existen películas que no han sido rentadas, lo que indica posible bajo interés o mala visibilidad  
+- Se identificaron clientes sin actividad, lo que puede representar oportunidades de reactivación  
+- Algunos actores tienen una participación significativamente mayor en el catálogo  
+- Las ventas varían entre tiendas, mostrando diferencias en desempeño  
+- El análisis permite identificar patrones de consumo y comportamiento del cliente  
+
+---
+
+## Herramientas y tecnologías
 
 - SQL Server  
-- SQL Server Management Studio (SSMS)  
-- T-SQL
+- SQL (consultas relacionales)  
+
+---
+
+## Contenido del proyecto
+
+En este repositorio encontrarás:
+
+- **Archivo SQL**  
+  Contiene todas las consultas realizadas durante el análisis.
+
+- **Documento del proyecto (PDF)**  
+  Incluye capturas de pantalla, resultados y conclusiones de cada consulta.
+
+---
+
+## Contacto
+
+📩 Correo: emmanuelmata111@gmail.com
